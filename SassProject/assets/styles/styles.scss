@@ -1,0 +1,11 @@
+@import './reset';
+@import './mixings';
+@import './variables';
+@import './header';
+@import './mobile-navigation';
+@import './adBar';
+@import './animes';
+.main {
+    position: relative;
+    padding-bottom: 59px;
+}

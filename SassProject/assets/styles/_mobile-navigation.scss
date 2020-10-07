@@ -1,0 +1,23 @@
+.mobile-nav {
+    width: 100%;
+    background: $mainDarkBlue;
+    padding: 5px 0;
+    @include flexRow;
+    position: fixed;
+    bottom: 0;
+    color: $mainTextColor;
+    &__boxes {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        i {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+    }
+}
