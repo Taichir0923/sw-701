@@ -1,9 +1,47 @@
-.header {
+.header-bar {
     width: 100%;
-    padding: 10px 0;
     background: $mainDarkBlue;
-    @include flexCenter;
-    img {
-        width: 105px;
+    .header {
+        width: 100%;
+        padding: 10px 0;
+        @include flexCenter;
+        color: $mainTextColor;
+        img {
+            width: 105px;
+        };
+        &--menu {
+            display: none;
+        }
+    }
+}
+
+
+/* 
+    responsive
+*/
+
+@media(min-width: 768px){
+    .header-bar {
+
+        .header {
+            @include flexRow;
+            &__items {
+                width: 50%;
+                ul li {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 0 20px;
+                    font-weight: 700;
+                };
+                img {
+                    margin-left: 20px;
+                    width: 126px;
+                }
+            };
+            &--menu {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
     }
 }

@@ -5,7 +5,22 @@
 @import './mobile-navigation';
 @import './adBar';
 @import './animes';
+@import './footer';
 .main {
     position: relative;
     padding-bottom: 59px;
+}
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/*
+    responsive
+*/
+@media(min-width: 768px){
+    .main {
+        padding-bottom: 0;
+    }
 }

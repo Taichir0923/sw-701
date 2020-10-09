@@ -1,0 +1,44 @@
+/*
+ mobile-nav starts
+*/
+
+.mobile-footer {
+    @include flexRow;
+    background: $mainDarkBlue;
+    color: $mainTextColor;
+    font-size: 12px;
+    padding: 1.5rem 0;
+    img {
+        width: 100px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    };
+    &__items {
+        width: 50%;
+        div {
+            margin-bottom: 1rem;
+            span {
+                font-size: 20px;
+                padding-left: 1rem;
+                &:first-child {
+                    padding-left: 0;
+                }
+            };
+        }
+        ul {
+            margin-left: 1rem;
+            li {
+                padding: 8px 0;
+                text-transform: uppercase;
+                list-style: none;
+            }
+        }
+        .sec {
+            margin-left: 0;
+        }
+    }
+}
+
+/*
+ mobile-nav ends
+*/

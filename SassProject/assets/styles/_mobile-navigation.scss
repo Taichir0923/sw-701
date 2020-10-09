@@ -21,3 +21,13 @@
         }
     }
 }
+
+/* 
+    responsive
+*/
+
+@media(min-width: 768px){
+    .mobile-nav {
+        display: none;
+    }
+}
