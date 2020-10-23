@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JQuery</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.5.1.js"
+	  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  crossorigin="anonymous"
+	  ></script>
+	  <style type="text/css">
+	  	#query:before , #query:after {
+	  		color: #00ff00
+	  	}
+	  </style>
+</head>
+<body>
+	<!-- <div id="query">click me!</div>
+	<div class="parent">
+		<div class="childone">1</div>
+		<div class="childtwo">2</div>
+		<div class="childthree">3</div>
+	</div> -->
+	<input type="" id="count" name="">
+	<div id="drag">
+		<ul>
+			
+		</ul>
+	</div>
+	<button id="clck">click me!</button>
+	<img src="" id="link">
+
+	<script type="text/javascript">
+		$(document).ready(() => {
+			// $('#query').on('click', event => {
+			// 	$('#quer').css({
+					// "width": "150px",
+					// "height": "150px",
+					// "border": "1px solid #000"
+			// 	});
+			// });
+			// $('#quer').click(() => {
+			// 	$('#query').after("After Method");
+			// 	$('#query').before("Before Method");
+			// });
+			// let holder = '';
+			// $('#query').mouseover(() => {
+			// 	holder = $('#query').text();
+			// 	$('#query').text('nadaas hold')
+			// });
+			// $('#query').mouseout(() => {
+			// 	$('#query').text(holder)
+			// });
+			// // $('.parent').children('div.childtwo').text('hi there!');
+
+			// // $('.parent div.childtwo').siblings().html("Hello!")
+			// // $('.parent').children().last().css({
+			// // 	"width": "150px",
+			// // 	"height": "150px",
+			// // 	"border": "1px solid #000",
+			// // 	"display": 'flex',
+			// // 	"justify-content": 'center',
+			// // 	"align-items": 'center'
+			// // });
+			// // $('#count').keydown(e => {
+			// // 	$('#drag').html(`${e.which} dugaartai tovchluur daragdlaa...`)
+			// // })
+			// $.getJSON('https://jsonplaceholder.typicode.com/users', data => {
+			// 	$.each(data, (key, value) => {
+			// 		$('#drag').append(`<li class="list">${value['name']} <br> ${value['username']}</li>`);
+			// 		$('.list').click(() => {
+			// 			$.getJSON(`https://jsonplaceholder.typicode.com/todos?userId=${value['id']}` , dta => {
+			// 				$.each(dta, (ky, val) => {
+			// 					console.log(val['title'])
+			// 				})
+			// 			})
+			// 		})
+			// 	})
+			// })
+			$('#clck').click(() => {
+				$('#link').attr('src' , 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+			})
+		})
+	</script>
+	<script
+	  src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"
+	  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+	  crossorigin="anonymous"></script>
+</body>
+</html>
