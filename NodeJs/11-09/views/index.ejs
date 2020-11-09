@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav><ul><li><a href="/">home</a></li></ul></nav>
+        <nav><ul><li><a href="/newpost">new post</a></li></ul></nav>
+    </header>
+    <% if(post.length > 0) { %>
+        <main>
+            <h1>Post Lists</h1>
+            <div>
+                <% for(let posts of post) { %>
+                    <article>
+                        <div>
+                            <h1><%= posts.title %></h1>
+                        </div>
+                        <div>
+                            <img src="<%= posts.image %>" alt="">
+                        </div>
+                        <div>
+                            <p><%= posts.body %></p>
+                            <p style="text-align: right;">Publisher: <%= posts.publisher %></p>
+                        </div>
+                    </article>
+                    <hr>
+                <% } %>
+            </div>
+        </main>
+    <% } else { %>
+        <h1>
+            Hooson baina
+        </h1>
+    <% } %>
+</body>
+</html>

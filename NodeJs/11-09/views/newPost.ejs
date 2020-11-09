@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav><ul><li><a href="/">home</a></li></ul></nav>
+        <nav><ul><li><a href="/newpost">new post</a></li></ul></nav>
+    </header>
+    <main>
+        <form action="/post" method="POST">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div>
+                <label for="body">Body</label>
+                <textarea rows="5" name="body" id="body"></textarea>
+            </div>
+            <div>
+                <label for="imageSrc">Image</label>
+                <input type="text" name="imageSrc" id="imageSrc">
+            </div>
+            <div>
+                <label for="publisher">Publisher</label>
+                <input type="text" name="publisher" id="publisher">
+            </div>
+            <button type="submit">Create</button>
+        </form>
+    </main>
+</body>
+</html>
